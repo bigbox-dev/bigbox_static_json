@@ -3,6 +3,7 @@
   "description": "Save menu, logo, social network data in json file to show on frontend.",
   "type": "drupal-module",
   "license": "GPL-2.0+",
+  "version": "1.0.0",
   "require": {
     "drupal/config_pages": "^2.0",
     "drupal/eck": "^1.0@alpha",
