@@ -1,0 +1,31 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+
+//function bigbox_static_json_entity_insert(EntityInterface $entity) {
+//}
+
+
+/**
+ * Implements hook_ajax_render_alter().
+ */
+/**
+ * Implements hook_install().
+ */
+function bigbox_static_json_install(){
+  module_set_weight('bigbox_static_json', 23);
+}
+
+function bigbox_static_json_entity_update(EntityInterface $entity) {
+  // меню сайта
+  if ($entity->bundle() == 'site_menu' && $entity->getEntityTypeId() == 'config_pages') {
+    $obj = Drupal::service('bigbox_static_json');
+    $obj->menu_update($entity) ;
+  }
+  
+  if ($entity->bundle() == 'global_settings' && $entity->getEntityTypeId() == 'config_pages') {
+    $obj = Drupal::service('bigbox_static_json');
+    $obj->global_settings_update($entity);
+  };
+}
+

@@ -1,0 +1,9 @@
+uuid: 48214325-404a-4468-8bcd-b6bbd31f340a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.site_menu
+name: 'Пункт меню'
+type: site_menu_item
+description: ''

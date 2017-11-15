@@ -1,0 +1,10 @@
+name: bigbox_static_json
+type: module
+description: Save menu, logo, social network data in json file to show on frontend.
+core: 8.x
+package: bigbox
+dependencies:
+ - paragraphs
+ - config_pages
+ - eck
+version: 1.0

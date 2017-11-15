@@ -1,0 +1,4 @@
+services:
+  bigbox_static_json:
+    class: Drupal\bigbox_static_json\BigboxStaticJsonClass
+

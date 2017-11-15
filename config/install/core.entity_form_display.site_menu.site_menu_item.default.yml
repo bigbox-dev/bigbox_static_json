@@ -1,0 +1,23 @@
+uuid: d29f4456-22e5-4d6d-b59f-519b9ea3339f
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.site_menu.site_menu_item
+    - field.field.site_menu.site_menu_item.field_menu_item_link
+  module:
+    - link
+id: site_menu.site_menu_item.default
+targetEntityType: site_menu
+bundle: site_menu_item
+mode: default
+content:
+  field_menu_item_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden: {  }

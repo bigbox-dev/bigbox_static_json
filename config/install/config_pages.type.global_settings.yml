@@ -1,0 +1,14 @@
+uuid: dfbd4403-2286-4b7a-9a51-5dc2987ccc03
+langcode: en
+status: true
+dependencies: {  }
+id: global_settings
+label: 'Глобальные настройки сайта'
+context:
+  show_warning: 1
+  group:
+    language: 0
+menu:
+  path: ''
+  weight: '0'
+  description: ''

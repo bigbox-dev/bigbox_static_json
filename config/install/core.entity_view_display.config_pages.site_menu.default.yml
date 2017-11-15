@@ -1,0 +1,21 @@
+uuid: eeb1e9d0-a972-46b0-a966-258ca7c46064
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.site_menu
+    - field.field.config_pages.site_menu.field_site_menu
+id: config_pages.site_menu.default
+targetEntityType: config_pages
+bundle: site_menu
+mode: default
+content:
+  field_site_menu:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

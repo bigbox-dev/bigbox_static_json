@@ -1,0 +1,14 @@
+uuid: d2d708b4-66b4-4671-a883-f9c15b548b98
+langcode: en
+status: true
+dependencies: {  }
+id: site_menu
+label: 'Меню сайта'
+context:
+  show_warning: 1
+  group:
+    language: 0
+menu:
+  path: ''
+  weight: '0'
+  description: ''

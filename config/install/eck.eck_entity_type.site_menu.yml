@@ -1,0 +1,10 @@
+uuid: 9c106d8e-c144-4a95-a6e3-c72e5ab3fd5d
+langcode: en
+status: true
+dependencies: {  }
+id: site_menu
+label: 'Меню сайта'
+created: false
+changed: false
+uid: false
+title: true

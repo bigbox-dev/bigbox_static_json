@@ -1,0 +1,17 @@
+uuid: de5a759b-5d59-4d22-847b-ef7d906f9a97
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: logo
+label: 'Логотип сайта'
+effects:
+  a5d5670e-a7b5-4de8-bfb3-5cd86595b4a6:
+    uuid: a5d5670e-a7b5-4de8-bfb3-5cd86595b4a6
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 210
+      height: 50
+      crop_type: focal_point

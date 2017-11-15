@@ -1,0 +1,28 @@
+uuid: 0b861b70-5105-4bc6-b166-7181b49c33bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.site_menu
+    - eck.eck_type.site_menu.site_menu_item
+    - field.storage.config_pages.field_site_menu
+id: config_pages.site_menu.field_site_menu
+field_name: field_site_menu
+entity_type: config_pages
+bundle: site_menu
+label: 'Меню сайта'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:site_menu'
+  handler_settings:
+    target_bundles:
+      site_menu_item: site_menu_item
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
