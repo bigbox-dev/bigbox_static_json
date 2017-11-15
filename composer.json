@@ -1,7 +1,8 @@
 {
-  "name": "bigbox-dev/bigbox_static_json",
+  "name": "Drupal/bigbox_static_json",
   "description": "Save menu, logo, social network data in json file to show on frontend.",  
   "minimum-stability": "dev",
+  "type": "drupal-module",
   "version": "1.0.0",
   "dist": {
       "url": "https://github.com/bigbox-dev/bigbox_static_json/archive/1.0.0.zip",
