@@ -7,7 +7,7 @@
   "dist": {
       "url": "https://github.com/bigbox-dev/bigbox_static_json/archive/1.0.zip",
       "type": "zip"
-   }
+   },
   "require": {
     "drupal/config_pages": "^2.0",
     "drupal/eck": "^1.0@alpha",
