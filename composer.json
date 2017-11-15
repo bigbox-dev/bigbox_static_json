@@ -5,7 +5,7 @@
   "minimum-stability": "dev",
   "version": "1.0.0",
   "dist": {
-      "url": "https://github.com/bigbox-dev/bigbox_static_json/archive/1.0.zip",
+      "url": "https://github.com/bigbox-dev/bigbox_static_json/archive/1.0.0.zip",
       "type": "zip"
    },
   "require": {
