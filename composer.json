@@ -11,7 +11,6 @@
   "require": {
     "drupal/config_pages": "^2.0",
     "drupal/eck": "^1.0@alpha",
-    "drupal/paragraphs": "^1.2",
-    "drupal/field_collection": "3.x-dev"
+    "drupal/paragraphs": "^1.2"    
   }
 }
