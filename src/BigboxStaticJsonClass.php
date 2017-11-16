@@ -127,7 +127,7 @@ class BigboxStaticJsonClass {
                   }
                 }
                 else{
-                  $itemValues->$paragraphFieldName = $this->get_field_value($paragraphField);
+                  if ($this->get_field_value($paragraphField)) $itemValues->$paragraphFieldName = $this->get_field_value($paragraphField);
                 }
               }
             }
@@ -141,7 +141,7 @@ class BigboxStaticJsonClass {
             $data->$field_name = $image_list;
           }
         }else {
-          $data->$field_name = $this->get_field_value($field);
+          if ($this->get_field_value($field)) $data->$field_name = $this->get_field_value($field);
         }
       };
     };
