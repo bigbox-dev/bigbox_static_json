@@ -131,7 +131,7 @@ class BigboxStaticJsonClass {
                 }
               }
             }
-            if (!empty($itemValues)) $itemsValues[] = $itemValues;
+            if (!empty(get_object_vars($itemValues))) $itemsValues[] = $itemValues;
           }
           $data->$field_name = $itemsValues;
 
