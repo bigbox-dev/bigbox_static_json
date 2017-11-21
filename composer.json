@@ -1,12 +1,11 @@
 {
   "name": "Drupal/bigbox_static_json",
-  "description": "Save menu, logo, social network data in json file to show on frontend.",  
+  "description": "Save menu, logo data in json file to show on frontend.",  
   "minimum-stability": "dev",
   "type": "drupal-module",
-  "version": "1.0.1",  
+  "version": "1.0.2",  
   "require": {
     "drupal/config_pages": "^2.0",
-    "drupal/eck": "^1.0@alpha",
-    "drupal/paragraphs": "^1.2"    
+    "drupal/eck": "^1.0@alpha"    
   }
 }

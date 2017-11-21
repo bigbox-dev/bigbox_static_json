@@ -57,14 +57,14 @@ class BigboxStaticJsonClass {
       foreach ($field_value as $value) {
         $itemValues = new \stdClass();
         $targetId = $value['target_id'];
-        $uri = File::load($targetId)->getFileUri();
+        $file = File::load($targetId);
+        $uri = $file->getFileUri();
         $styles = \Drupal::entityTypeManager()->getStorage('image_style')->loadMultiple();
         foreach ($styles as $style) {
           $name = $style->getName();
           $strName = $name . '_style';
           $itemValues->$strName = ImageStyle::load($name)->buildUrl($uri);
         }
-        $itemValues->url = $uri;
         $itemValues->alt = $value['alt'];
         $itemsValues[] = $itemValues;
       }
@@ -100,16 +100,7 @@ class BigboxStaticJsonClass {
         $field_value = $field->getValue();
         $field_type = FieldConfig::loadByName('config_pages','global_settings', $field_name)->getType();
 
-        if ($field_type == 'image' && $field_name == 'field_logo') {
-          $itemValues = new \stdClass();
-          $targetId = $field_value[0]['target_id'];
-          $uri = File::load($targetId)->getFileUri();
-          $itemValues-> url = $uri;
-          $itemValues-> url_logo_style = ImageStyle::load('logo')->buildUrl($uri);
-          $itemValues-> alt = $field_value[0]['alt'];
-          $itemValues-> title = $field_value[0]['title'];
-          $data->$field_name = $itemValues;
-        }elseif ($field_type == 'entity_reference_revisions'){
+        if ($field_type == 'entity_reference_revisions'){
           $itemsValues = [];
           foreach ($field_value as $value) {
             $pharagraph = Paragraph::load($value['target_id']);
@@ -149,3 +140,4 @@ class BigboxStaticJsonClass {
     $this->update_json_file($json_data);
   }
 }
+
