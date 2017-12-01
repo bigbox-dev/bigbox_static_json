@@ -4,6 +4,7 @@ namespace Drupal\bigbox_static_json;
 
 use Drupal\file\Entity\File;
 use Drupal\image\Entity\ImageStyle;
+use Drupal\migrate_drupal\Plugin\migrate\source\d8\Config;
 use Drupal\paragraphs\Entity\Paragraph;
 use Drupal\field\Entity\FieldConfig;
 
@@ -99,7 +100,13 @@ class BigboxStaticJsonClass {
       if (!in_array($field_name, $this->exclude_fields())){
         $field_value = $field->getValue();
         $field_type = FieldConfig::loadByName('config_pages','global_settings', $field_name)->getType();
-
+        
+	// сохранение названия сайта в конфиге друпала
+        if ($field_name == 'field_site_name'){
+          $siteName = $this->get_field_value($field)[0];
+          \Drupal::configFactory()->getEditable('system.site')->set('name', $siteName)->save();
+        }
+        
         if ($field_type == 'entity_reference_revisions'){
           $itemsValues = [];
           foreach ($field_value as $value) {
@@ -140,4 +147,5 @@ class BigboxStaticJsonClass {
     $this->update_json_file($json_data);
   }
 }
+
 
