@@ -67,6 +67,7 @@ class BigboxStaticJsonClass {
           $itemValues->$strName = ImageStyle::load($name)->buildUrl($uri);
         }
         $itemValues->alt = $value['alt'];
+        $itemValues->title = $value['title'];
         $itemsValues[] = $itemValues;
       }
     }
