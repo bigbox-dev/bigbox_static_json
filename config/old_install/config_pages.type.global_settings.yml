@@ -2,8 +2,6 @@ uuid: dfbd4403-2286-4b7a-9a51-5dc2987ccc03
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: B7pKBym05J40K24nqxaopyEZehXXLuuDi-Gu0py3yjo
 id: global_settings
 label: 'Глобальные настройки сайта'
 context:
@@ -11,6 +9,6 @@ context:
   group:
     language: 0
 menu:
-  path: /admin/global_settings
-  weight: '1'
+  path: ''
+  weight: '0'
   description: ''

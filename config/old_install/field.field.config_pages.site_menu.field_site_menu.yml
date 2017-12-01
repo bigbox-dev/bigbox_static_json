@@ -1,4 +1,4 @@
-uuid: b601d624-e11b-4082-8275-b5a17314fc59
+uuid: 0b861b70-5105-4bc6-b166-7181b49c33bb
 langcode: en
 status: true
 dependencies:
@@ -23,6 +23,6 @@ settings:
       site_menu_item: site_menu_item
     sort:
       field: _none
-    auto_create: true
+    auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

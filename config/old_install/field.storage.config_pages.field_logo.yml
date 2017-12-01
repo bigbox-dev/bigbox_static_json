@@ -6,8 +6,6 @@ dependencies:
     - config_pages
     - file
     - image
-_core:
-  default_config_hash: JF9i9r2F13gzQBhHSgaPKmxheobsU_Xt2atuSZVW8KM
 id: config_pages.field_logo
 field_name: field_logo
 entity_type: config_pages

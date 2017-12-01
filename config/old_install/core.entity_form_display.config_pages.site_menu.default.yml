@@ -1,4 +1,4 @@
-uuid: ad1f4dbb-dde4-47e8-8815-e42d61d6e9b2
+uuid: 5f57b58e-5827-4618-a740-84c72a62c47c
 langcode: en
 status: true
 dependencies:
@@ -12,10 +12,9 @@ mode: default
 content:
   field_site_menu:
     weight: 0
-    label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: options_buttons
     region: content
-hidden: {  }
+hidden:
+  label: true

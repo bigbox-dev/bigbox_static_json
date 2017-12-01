@@ -3,25 +3,65 @@ langcode: en
 status: true
 dependencies:
   config:
-    - config_pages.type.global_settings
+    - config_pages.type.global_settings    
     - field.field.config_pages.global_settings.field_logo
+    - field.field.config_pages.global_settings.field_site_name    
     - image.style.thumbnail
   module:
+    - field_group
     - focal_point
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_globalnye_nastroiki_saita:
+      children:
+        - group_obsie_nastroiki
+      parent_name: ''
+      weight: 20
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: 'Глобальные настройки сайта'    
+    group_obsie_nastroiki:
+      children:
+        - field_site_name
+        - field_logo        
+      parent_name: group_globalnye_nastroiki_saita
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'Общие настройки'    
+_core:
+  default_config_hash: xDBiUHAGwN9bykqvOATpratZda97WfJZakg5zUChffA
 id: config_pages.global_settings.default
 targetEntityType: config_pages
 bundle: global_settings
 mode: default
-content:
+content:  
   field_logo:
-    weight: 24
+    weight: 30
     settings:
       preview_image_style: thumbnail
       progress_indicator: throbber
-      preview_link: true
       offsets: '50,50'
+      preview_link: false
     third_party_settings: {  }
     type: image_focal_point
     region: content
+  field_site_name:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content  
 hidden:
   label: true

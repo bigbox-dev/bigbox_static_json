@@ -1,0 +1,27 @@
+uuid: d1938016-e9ff-4b42-96dd-122301b944e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - config_pages.type.global_settings
+    - field.field.config_pages.global_settings.field_logo
+    - image.style.thumbnail
+  module:
+    - focal_point
+id: config_pages.global_settings.default
+targetEntityType: config_pages
+bundle: global_settings
+mode: default
+content:
+  field_logo:
+    weight: 24
+    settings:
+      preview_image_style: thumbnail
+      progress_indicator: throbber
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+    type: image_focal_point
+    region: content
+hidden:
+  label: true

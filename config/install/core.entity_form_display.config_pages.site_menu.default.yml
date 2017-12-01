@@ -1,10 +1,13 @@
-uuid: 5f57b58e-5827-4618-a740-84c72a62c47c
+uuid: 637bede7-a24f-4f83-a965-a9ebea5147e1
 langcode: en
 status: true
 dependencies:
   config:
     - config_pages.type.site_menu
     - field.field.config_pages.site_menu.field_site_menu
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
 id: config_pages.site_menu.default
 targetEntityType: config_pages
 bundle: site_menu
@@ -12,9 +15,18 @@ mode: default
 content:
   field_site_menu:
     weight: 0
-    settings: {  }
-    third_party_settings: {  }
-    type: options_buttons
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+      allow_new: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
     region: content
 hidden:
   label: true

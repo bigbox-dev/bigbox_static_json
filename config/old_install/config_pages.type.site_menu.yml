@@ -1,4 +1,4 @@
-uuid: a12edd0d-db9f-400b-937b-79cd58992b19
+uuid: d2d708b4-66b4-4671-a883-f9c15b548b98
 langcode: en
 status: true
 dependencies: {  }
@@ -9,6 +9,6 @@ context:
   group:
     language: 0
 menu:
-  path: /admin/site_menu
+  path: ''
   weight: '0'
   description: ''

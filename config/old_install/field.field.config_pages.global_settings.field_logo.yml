@@ -7,15 +7,13 @@ dependencies:
     - field.storage.config_pages.field_logo
   module:
     - image
-_core:
-  default_config_hash: TP59PYoTleuuZZePlrXKNT7vVETT-lLgEzL8v8JtDxo
 id: config_pages.global_settings.field_logo
 field_name: field_logo
 entity_type: config_pages
 bundle: global_settings
-label: 'Логотип сайта'
+label: logo
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -27,7 +25,7 @@ settings:
   min_resolution: 210x50
   alt_field: true
   alt_field_required: false
-  title_field: true
+  title_field: false
   title_field_required: false
   default_image:
     uuid: ''
